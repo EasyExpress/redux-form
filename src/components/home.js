@@ -79,7 +79,14 @@ const validate = values => {
     return errors;
 };
 
-export default connect(null, null)(
+function mapStateToProps(state) {
+    return {
+        initialValues: state.contact
+    };
+}
+
+
+export default connect(mapStateToProps, null)(
     reduxForm({
         form: 'message-form',
         validate,
