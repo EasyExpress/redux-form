@@ -1,0 +1,102 @@
+button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 180%;
+    font-weight: 300;
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-decoration: none;
+    background-color: $color-orange;
+    border: 1px solid $color-orange;
+    border-radius: 10rem;
+    color: $color-white;
+    margin-right: 1.5rem;
+    transition: all .2s;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2); 
+        border: 1px solid $color-dark-orange;
+        color: $color-white;
+    }
+    
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2); 
+        border: 1px solid $color-dark-orange;
+        color: $color-white;
+    }
+    
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2); 
+    }
+}
+
+.btn-block {
+    width: 100%;
+}
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20rem;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: $color-orange;
+    border: 1px solid $color-orange;
+    color: $color-white;
+    margin-right: 1.5rem;
+}
+
+.btn-border:link,
+.btn-border:visited {
+    border: 1px solid $color-orange;
+    color: $color-orange;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: $color-dark-orange;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid $color-dark-orange;
+}
+
+.btn-border:hover,
+.btn-border:active {
+    border: 1px solid $color-dark-orange;
+    color: $color-white;
+}
+
+@media only screen and (max-width: $screen-small) {
+    button,
+    .btn:link,
+    .btn:visited,
+    .btn:active,
+    .btn:hover,
+    input[type=submit] {
+        font-size: 160%;
+        padding: 0.5rem 2rem;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 20rem;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+}

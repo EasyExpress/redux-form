@@ -1,3 +1,6 @@
+.color-white {
+  color: #FFF; }
+
 *,
 *::before,
 *::after {
@@ -16,6 +19,119 @@ body {
 
 .height-40 {
   height: 4rem; }
+
+.input,
+textarea {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  display: block;
+  width: 100% !important;
+  background-color: rgba(204, 204, 204, 0.3);
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0.3rem;
+  transition: all .3s; }
+  .input:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom: 0.3rem solid #f58426; }
+
+textarea {
+  height: 10rem; }
+
+input[type=checkbox] {
+  margin: 1rem 0.5rem  1rem 0; }
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 180%;
+  font-weight: 300;
+  font-family: 'Lato', 'Arial', sans-serif;
+  text-decoration: none;
+  background-color: #f58426;
+  border: 1px solid #f58426;
+  border-radius: 10rem;
+  color: #FFF;
+  margin-right: 1.5rem;
+  transition: all .2s;
+  position: relative; }
+  button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border: 1px solid #cf6d17;
+    color: #FFF; }
+  button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: 1px solid #cf6d17;
+    color: #FFF; }
+  button:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-block {
+  width: 100%; }
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s; }
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #f58426;
+  border: 1px solid #f58426;
+  color: #FFF;
+  margin-right: 1.5rem; }
+
+.btn-border:link,
+.btn-border:visited {
+  border: 1px solid #f58426;
+  color: #f58426; }
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #cf6d17; }
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17; }
+
+.btn-border:hover,
+.btn-border:active {
+  border: 1px solid #cf6d17;
+  color: #FFF; }
+
+@media only screen and (max-width: 576px) {
+  button,
+  .btn:link,
+  .btn:visited,
+  .btn:active,
+  .btn:hover,
+  input[type=submit] {
+    font-size: 160%;
+    padding: 0.5rem 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20rem;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; } }
+.error {
+  color: #d63031;
+  font-size: 160%; }
 
 .home {
   padding: 2rem;
